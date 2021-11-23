@@ -1,0 +1,285 @@
+:root {
+  --primary-color: black;
+}
+
+
+body,
+html {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+  height: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+}
+
+.flex {
+  display: flex;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.content-wrap {
+  padding-bottom: 200px;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+h4 {
+  font-size: 1.35rem;
+}
+
+h5 {
+  font-size: 1.25rem;
+}
+
+/*      NAV     */
+
+#nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: var(--primary-color);
+  box-shadow: 0px 5px 10px var(--primary-color);
+  border-bottom: 1px solid white;
+  z-index: 2;
+}
+
+#nav-icons-container {
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  height: 60px;
+  max-width: 1300px;
+}
+
+#nav-icons-container a {
+  color: white;
+  font-size: 28px;
+}
+
+.nav-icon {
+  width: 50px;
+}
+
+/*      ABOUT     */
+
+#about-container {
+  padding-top: 200px;
+}
+
+#about-home {
+  margin-bottom: 30px;
+}
+
+#about {
+  padding-top: 90px;
+}
+
+#about-black-box {
+  width: 70vw;
+  height: 70vw;
+  max-height: 1200px;
+  min-height: 850px;
+  min-width: 600px;
+  background-color: var(--primary-color);
+  transform: rotate(25deg);
+  position: absolute;
+  right: -35vw;
+  top: -20vw;
+  bottom: 0;
+  z-index: -1;
+  border-radius: 5%;
+  box-shadow: 5px 7px 9px var(--primary-color);
+}
+
+#about-paragraph {
+  max-width: 800px;
+  font-size: 1.2rem;
+  line-height: 2.2rem;
+}
+
+#about-paragraph a {
+  text-decoration: underline;
+}
+
+/*      SKILLS      */
+
+#skills {
+  margin-top: 200px;
+  position: relative;
+  color: white;
+}
+
+#skills-background {
+  background-color: var(--primary-color);
+  width: 102%;
+  height: 415px;
+  left: -15px;
+  top: -10px;
+  transform: rotate(2.5deg);
+  z-index: -1;
+  position: absolute;
+  border-radius: 5%;
+  box-shadow: 5px 7px 9px var(--primary-color);
+}
+
+#skills-container {
+  transform: rotate(0.5deg);
+  padding-top: 20px;
+}
+
+#skills-card-container {
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 75px;
+}
+
+.skill-card {
+  width: 25%;
+  height: 125px;
+  font-size: 3rem;
+}
+
+/*      PROJECTS      */
+
+#projects {
+  padding-top: 100px;
+  display: flex;
+}
+
+#projects-container {
+  transform: rotate(0.5deg);
+  padding-top: 20px;
+}
+
+#projects-card-container {
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 50px;
+}
+
+.project-card {
+  width: 30%;
+  height: 15vw;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-card-title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.project-card-thumbnail-link {
+  width: 100%;
+  height: 100%;
+  justify-content: space-evenly;
+}
+
+.project-card-thumbnail-link a {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.project-card-thumbnail {
+  width: 80%;
+  height: 80%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: var(--primary-color);
+  border-radius: 15px;
+  outline: 1px solid var(--primary-color);
+  box-shadow: -2px 5px 10px var(--primary-color);
+}
+
+.project-card-thumbnail-0 {
+  background-image: url('./Images/creativeagency.png');
+}
+
+.project-card-thumbnail-1 {
+  background-image: url('./Images/fishpedia.png');
+}
+
+/*      FOOTER      */
+
+#footer {
+  height: 50px;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+#footer a {
+  color: white;
+}
+
+@media (max-width: 2300px) {
+  #about-black-box {
+    right: -35vw;
+    top: -25vw;
+  }
+}
+
+@media (max-width: 2000px) {
+  #about-black-box {
+    right: -35vw;
+    top: -30vw;
+  }
+}
+
+@media (max-width: 1800px) {
+  #about-black-box {
+    right: -35vw;
+    top: -35vw;
+  }
+}
+
+@media (max-width: 1200px) {
+  #about-paragraph {
+    max-width: 600px;
+  }
+}
+
+@media (max-width: 1000px) {
+  #about-black-box {
+    right: -35vw;
+    top: -45vw;
+  }
+}
+
+@media (max-width: 850px) {
+  #about-black-box {
+    right: -35vw;
+    top: -50vw;
+  }
+}
