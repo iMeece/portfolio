@@ -1,5 +1,6 @@
 :root {
-  --primary-color: black;
+  --primary-color: rgb(30, 30, 30);
+  --primary-white: rgb(240, 240, 240);
 }
 
 
@@ -13,6 +14,7 @@ body {
   min-height: 100vh;
   position: relative;
   overflow-x: hidden;
+  background-color: var(--primary-white);
 }
 
 a {
@@ -31,7 +33,7 @@ a {
 }
 
 .content-wrap {
-  padding-bottom: 200px;
+  padding-bottom: 300px;
 }
 
 h1 {
@@ -62,7 +64,7 @@ h5 {
   width: 100%;
   background-color: var(--primary-color);
   box-shadow: 0px 5px 10px var(--primary-color);
-  border-bottom: 1px solid white;
+  border-bottom: 1px solid var(--primary-white);
   z-index: 2;
 }
 
@@ -75,7 +77,7 @@ h5 {
 }
 
 #nav-icons-container a {
-  color: white;
+  color: var(--primary-white);
   font-size: 28px;
 }
 
@@ -129,7 +131,11 @@ h5 {
 #skills {
   margin-top: 200px;
   position: relative;
-  color: white;
+  color: var(--primary-white);
+}
+
+#skills h2 {
+  font-weight: bold;
 }
 
 #skills-background {
@@ -169,6 +175,10 @@ h5 {
   display: flex;
 }
 
+#projects h2 {
+  font-weight: bold;
+}
+
 #projects-container {
   transform: rotate(0.5deg);
   padding-top: 20px;
@@ -191,6 +201,7 @@ h5 {
 .project-card-title {
   text-align: center;
   margin-bottom: 15px;
+  font-weight: bold;
 }
 
 .project-card-thumbnail-link {
@@ -228,6 +239,7 @@ h5 {
 /*      FOOTER      */
 
 #footer {
+  background-color: var(--primary-color);
   height: 50px;
   position: absolute;
   bottom: 0;
@@ -235,12 +247,33 @@ h5 {
   align-items: center;
   justify-content: center;
   text-align: center;
+  color: var(--primary-white);
+  padding-top: 30px;
+}
+
+#footer-background {
   background-color: var(--primary-color);
-  color: white;
+  width: 101%;
+  height: 115px;
+  z-index: -1;
+  top: -70px;
+  position: absolute;
+  transform: rotate(2deg);
+  border-radius: 20px 20px 0 0;
+  box-shadow: -2px -2px 10px var(--primary-color);
 }
 
 #footer a {
-  color: white;
+  color: var(--primary-white);
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+#footer h6 {
+  position: relative;
+  bottom: 20px;
 }
 
 @media (max-width: 2300px) {
