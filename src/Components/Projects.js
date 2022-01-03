@@ -5,7 +5,7 @@ const Projects = () => {
     const projectsArray = [
         { title: 'Creative Agency', link: 'https://imeece.github.io/creative-agency-template/', id: 'project-0' },
         { title: 'Fishpedia', link: 'https://imeece.github.io/fishpedia/', id: 'project-1' },
-        { title: 'title3', link: '', id: 'project-2' }
+        { title: 'The Mellow Martian', link: 'https://imeece.github.io/themellowmartian/', id: 'project-2' }
     ];
 
     return (
